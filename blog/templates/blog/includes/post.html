@@ -1,0 +1,16 @@
+{% load static%}
+
+<li>
+  <article class="post">
+    <a href="{% url 'post' 'Sunflower' %}">
+      <img src={% static "blog/images/sunflower.jpg" %} alt="my-first-photo" />
+      <div class="post__content">
+        <h3>Sunflower</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </a>
+  </article>
+</li>

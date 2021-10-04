@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "blog/post-ditails.css"%}/>
+    <link rel="stylesheet" href={% static "app.css"%}/>
+    <title>Sunflower</title>
+</head>
+<body>
+    <header id="main-navigation">
+      <h1>
+        <a href="{% url 'main_page' %}">My page</a>
+      </h1>
+      <nav><a href="{% url 'posts' %}">All photos </a></nav>
+    </header>
+    <section id='summary'>
+        <h2>Sunflower</h2>
+        <article>
+            <img src={% static 'blog/images/sunflower.jpg' alt='' %}>
+            <address>photo by me</address>
+            <div>
+                last update on <time>‎July ‎23th</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>{% lorem 1 %}</p>
+        <p>{% lorem 1 %}</p>
+    </main>
+</body>
+</html>
